@@ -64,8 +64,6 @@ function FormularioPostagem() {
     buscarTemas();
     if (id !== undefined) {
       buscarPostagemPorId(id);
-      console.log(tema);
-
     }
   }, [id]);
 
@@ -91,8 +89,6 @@ function FormularioPostagem() {
 
   async function gerarNovaPostagem(e: ChangeEvent<HTMLFormElement>) {
     e.preventDefault();
-
-    console.log({ postagem });
 
     if (id != undefined) {
       try {

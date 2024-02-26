@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import Postagem from '../../models/Postagem'
 
-
 interface CardPostagemProps {
   post: Postagem
 }
