@@ -14,12 +14,14 @@ import ListaPostagens from './postagens/listaPostagens/ListaPostagens';
 import FormularioPostagem from './postagens/formularioPostagem/FormularioPostagem';
 import DeletarPostagem from './postagens/deletarPostagem/DeletarPostagem';
 import Perfil from './paginas/perfil/Perfil';
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
   return (
     <>
-   <AuthProvider>
+      <AuthProvider>
+        <ToastContainer />
         <BrowserRouter>
           <Navbar />
           <div className='min-h-[80vh]'>
@@ -41,7 +43,7 @@ function App() {
           </div>
           <Footer />
         </BrowserRouter>
-        </AuthProvider>   
+      </AuthProvider>
     </>
   );
 }

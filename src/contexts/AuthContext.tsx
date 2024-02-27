@@ -1,6 +1,7 @@
 import { ReactNode, createContext, useState } from "react";
 import UsuarioLogin from "../models/UsuarioLogin";
 import { login } from "../services/Service";
+import { toastAlerta } from "../utils/toastAlerta";
 
 
 interface AuthContextProps {
@@ -33,12 +34,12 @@ export function AuthProvider({ children }: AuthProviderProps) {
     setIsLoading(true)
     try {
       await login(`/usuarios/logar`, userLogin, setUsuario)
-      alert("Usuário logado com sucesso!")
+      toastAlerta('Usuário logado com sucesso!', 'sucesso')
       setIsLoading(false)
 
     } catch (erro) {
       console.log(erro)
-      alert("Não foi possível validar seu usuário, verifique seu e-mail e senha!")
+      toastAlerta('Não foi possível validar seu usuário, verifique seu e-mail e senha!', 'erro')
       setIsLoading(false)
     }
   }

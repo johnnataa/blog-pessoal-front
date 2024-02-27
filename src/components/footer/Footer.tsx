@@ -12,7 +12,7 @@ function Footer() {
 
   if(usuario.token !== '') {
     footerComponent = (
-<div className="flex justify-center bg-indigo-900 text-white">
+<div className="flex justify-center bg-slate-950 text-white">
         <div className="container flex flex-col items-center py-4">
           <p className='text-xl font-bold'>Blog pessoal | &copy; </p>
           <p className='text-lg'>Acesse minhas redes sociais</p>
