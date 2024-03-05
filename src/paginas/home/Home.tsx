@@ -14,7 +14,7 @@ function Home() {
             <h2 className='text-5xl font-bold text-center'>Um Blog de Gelo e Fogo</h2>
             <h2 className='text-3xl'>❄️🔥</h2>
             <p className='text-xl text-center'>Entre nas muralhas da sua imaginação e explore um reino de pensamentos, reflexões e paixões que ecoam pelos corredores das nossas mentes.</p>
-            <p className='text-xl font-semibold'>Dracarys! 🔥🐲</p>
+            <p className='text-xl font-semibold'>Dracarys! 🔥</p>
             <div className="flex justify-around gap-4">
             <ModalPostagem />
               <Link to={'/postagens'} className='border rounded px-4 py-2 text-center hover:bg-white hover:text-slate-950'>Ver postagens</Link>
